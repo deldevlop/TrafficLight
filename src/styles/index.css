@@ -1,4 +1,3 @@
-
 /* 
 
     You can write your own styles here...
@@ -10,3 +9,95 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.rectangleForm {
+    background-color: black;
+    width: 200px;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+
+
+@keyframes glowRed {
+    0% {
+        box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 10px 0 #ff0000b3;
+    }
+}
+
+@keyframes glowGreen {
+    0% {
+        box-shadow: 0 0 10px 0 rgba(0, 255, 0, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 10px 0 rgba(0, 255, 0, 0.7);
+    }
+}
+
+
+@keyframes glowYellow {
+    0% {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 0, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 0, 0.7);
+    }
+}
+
+
+.glowRed {
+    animation: glowRed 1s infinite alternate;
+}
+
+.glowGreen {
+    animation: glowGreen 1s infinite alternate;
+}
+
+.glowYellow {
+    animation: glowYellow 1s infinite alternate;
+}
